@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Virais da Loteria no Brasil</title>
+  <meta name="description" content="Os vídeos mais vistos sobre loteria no Brasil: ganhadores de concursos comuns, Lotofácil (14 e 15 pontos), sistemas, políticos que ganharam e notícias que viralizaram. Sem datas especiais, resultados nem notícias repetidas.">
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <p class="eyebrow"><a class="back" href="../">Todos os nichos</a> · coletado em 18/10/2026</p>
+      <h1>Os vídeos mais vistos sobre <span>loteria</span> no Brasil</h1>
+      <p class="lede">Ganhadores em concursos comuns, Lotofácil com 14 e 15 pontos, sistemas e fechamentos, políticos que &quot;ganharam&quot; várias vezes, golpes e notícias curiosas que viralizaram no TikTok, YouTube, Shorts e Instagram. Só conteúdo brasileiro, sem datas especiais (como a Mega da Virada), sem vídeos de resultado e com uma notícia por história.</p>
+      <div class="stats" id="stats"></div>
+    </div>
+  </header>
+
+  <section class="controls wrap" aria-label="Filtros">
+    <div class="group">
+      <span class="label">Período</span>
+      <div class="seg" data-key="period">
+        <button data-value="2026">2026</button>
+        <button data-value="4y">Últimos 4 anos</button>
+      </div>
+    </div>
+    <div class="group">
+      <span class="label">Plataforma</span>
+      <div class="seg" data-key="platform">
+        <button data-value="all">Todas</button>
+        <button data-value="tiktok">TikTok</button>
+        <button data-value="youtube">YouTube</button>
+        <button data-value="youtube-shorts">Shorts</button>
+        <button data-value="instagram">Instagram</button>
+      </div>
+    </div>
+    <div class="group" id="g-region" hidden>
+      <span class="label">Região</span>
+      <div class="seg" data-key="region">
+        <button data-value="all">Todas</button>
+        <button data-value="us">Brasil</button>
+        <button data-value="world">Resto do mundo</button>
+      </div>
+    </div>
+    <div class="group" id="g-tipo" hidden>
+      <span class="label">Tipo</span>
+      <div class="seg" data-key="tipo" id="seg-tipo"></div>
+    </div>
+    <div class="group">
+      <span class="label">Formato</span>
+      <div class="seg" data-key="format">
+        <button data-value="all">Todos</button>
+        <button data-value="a">Áudio / narração</button>
+        <button data-value="p">Pessoa falando</button>
+      </div>
+    </div>
+    <div class="group grow">
+      <label class="label" for="q">Buscar</label>
+      <input id="q" type="search" placeholder="título, perfil ou hashtag" autocomplete="off">
+    </div>
+    <div class="group">
+      <label class="label" for="sort">Ordenar por</label>
+      <select id="sort">
+        <option value="views">Mais views</option>
+        <option value="likes">Mais curtidas</option>
+        <option value="date">Mais recentes</option>
+      </select>
+    </div>
+    <label class="toggle" hidden><input type="checkbox" id="trends"> Mostrar trends</label>
+  </section>
+
+  <main class="wrap">
+    <p class="summary" id="summary" aria-live="polite"></p>
+    <div class="grid" id="grid"></div>
+    <div class="more-wrap"><button class="more" id="more">Mostrar mais</button></div>
+  </main>
+
+  <section class="wrap insights" aria-labelledby="insights-title">
+    <h2 id="insights-title">O que mais viraliza</h2>
+    <div class="cards">
+      <article><h3>O que aconteceu com o ganhador</h3><p>&quot;O que aconteceu com o maior ganhador da Mega-Sena&quot; (14 milhões nos Shorts), &quot;O que aconteceu com os primeiros ganhadores&quot; (6 milhões no TikTok) e &quot;4 casos tristes de ganhadores&quot; (4,5 milhões): o desfecho da vida de quem ganhou é o que mais prende.</p></article>
+      <article><h3>Microdramas de ganhador</h3><p>&quot;Ela ganhou na loteria e deixou o marido sem saber&quot; (6,8 milhões) e &quot;ganhou e humilhou a esposa e o pai&quot; (4,3 milhões): novelinhas encenadas fazem muito sucesso no TikTok.</p></article>
+      <article><h3>Golpes e falsos ganhadores</h3><p>O golpe do bilhete premiado contra uma doméstica de 66 anos (3,8 milhões, Balanço Geral), &quot;enganou a cidade inteira dizendo que ganhou&quot; (3,6 milhões) e &quot;fingiu que ganhou na Mega-Sena&quot; (2 milhões).</p></article>
+      <article><h3>Lotofácil com poucos jogos</h3><p>&quot;Faça assim em apenas 2 jogos&quot; (1,8 milhão), fechamento simples (1,4 milhão) e fechamento manual com 5 jogos (1,2 milhão). Vídeos de 14 e 15 pontos ficam entre 400 e 500 mil.</p></article>
+      <article><h3>Música, humor e vidência</h3><p>&quot;Mega Sena&quot;, do Pablo com Marília Tavares, tem 148 milhões no YouTube; &quot;Rochelle ganhou na Mega-Sena?&quot; (Todo Mundo Odeia o Chris) tem 12 milhões; uma vidente com &quot;números da Mega&quot; passa de 7 milhões no TikTok.</p></article>
+      <article><h3>Políticos</h3><p>Bolsonaro ganhando num bolão com assessores e Lula relembrando quando ganhou na loteria aparecem, mas com cerca de 100 mil views. O caso dos Anões do Orçamento (1993) não teve vídeo viral nos últimos 4 anos.</p></article>
+    </div>
+  </section>
+
+  <section class="wrap method" aria-labelledby="method-title">
+    <h2 id="method-title">Como ler estes dados</h2>
+    <ul>
+      <li><strong>Views</strong> são o total mundial de cada vídeo no dia da coleta. TikTok, YouTube e Instagram contam views de formas diferentes, então compare dentro da mesma plataforma.</li>
+      <li><strong>Formato</strong> é inferido pelo título e pelas hashtags (afirmação, subliminal, frequência, "listen", repost de áudio). Confira o vídeo antes de usar como referência.</li>
+      <li><strong>Só Brasil</strong>: buscas só em português. No TikTok, só criadores registrados no Brasil. No YouTube e no Instagram, conteúdo em português; loterias de outros países ficam de fora.</li>
+      <li><strong>Fora do painel</strong>: concursos e datas especiais (Mega da Virada, Quina de São João, Lotofácil da Independência), vídeos que só mostram resultado ou sorteio, conteúdo hipotético ("se eu ganhar") e jogo do bicho.</li>
+      <li><strong>Uma notícia por história</strong>: quando vários vídeos contam o mesmo caso, fica só o mais visto. Os vídeos do topo de cada plataforma foram revisados um a um por agentes de IA (relevância, tipo e história); o restante é filtrado por palavras-chave.</li>
+      <li><strong>Instagram</strong>: views das páginas de tópico do Instagram. Em português, poucos tópicos de loteria têm essa página, então a cobertura é pequena.</li>
+      <li><strong>TikTok</strong>: 25 buscas e 4 hashtags, por mais curtidos. <strong>YouTube</strong>: 63 buscas em português, ordenadas por views, fatiadas em 5 períodos, com data exata de cada vídeo.</li>
+    </ul>
+    <p class="downloads">Baixar tudo: <a href="data/loteria-2026.csv" download>CSV de 2026</a> · <a href="data/loteria-4-anos.csv" download>CSV dos últimos 4 anos</a></p>
+  </section>
+
+  <footer class="wrap foot">
+    <p>Fontes: YouTube via yt-dlp; TikTok, Instagram e Shorts via ScrapeCreators. Coleta e ranking com a skill <code>videos-virais</code>.</p>
+  </footer>
+
+  <script src="../assets/app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Virais da Lei da Atração</title>
+  <meta name="description" content="Os vídeos mais vistos sobre lei da atração e manifestação em 2026 e nos últimos 4 anos, no TikTok, YouTube, Shorts e Instagram.">
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <p class="eyebrow"><a class="back" href="../">Todos os nichos</a> · coletado em 18/10/2026</p>
+      <h1>Os vídeos mais vistos sobre <span>lei da atração</span> e manifestação</h1>
+      <p class="lede">TikTok, YouTube, Shorts e Instagram, em 2026 e nos últimos 4 anos. Separados entre EUA e resto do mundo, e entre vídeos com pessoa falando e vídeos só de áudio ou narração.</p>
+      <div class="stats" id="stats"></div>
+    </div>
+  </header>
+
+  <section class="controls wrap" aria-label="Filtros">
+    <div class="group">
+      <span class="label">Período</span>
+      <div class="seg" data-key="period">
+        <button data-value="2026">2026</button>
+        <button data-value="4y">Últimos 4 anos</button>
+      </div>
+    </div>
+    <div class="group">
+      <span class="label">Plataforma</span>
+      <div class="seg" data-key="platform">
+        <button data-value="all">Todas</button>
+        <button data-value="tiktok">TikTok</button>
+        <button data-value="youtube">YouTube</button>
+        <button data-value="youtube-shorts">Shorts</button>
+        <button data-value="instagram">Instagram</button>
+      </div>
+    </div>
+    <div class="group" id="g-region">
+      <span class="label">Região</span>
+      <div class="seg" data-key="region">
+        <button data-value="all">Todas</button>
+        <button data-value="us">EUA</button>
+        <button data-value="world">Resto do mundo</button>
+      </div>
+    </div>
+    <div class="group" id="g-tipo" hidden>
+      <span class="label">Tipo</span>
+      <div class="seg" data-key="tipo" id="seg-tipo"></div>
+    </div>
+    <div class="group">
+      <span class="label">Formato</span>
+      <div class="seg" data-key="format">
+        <button data-value="all">Todos</button>
+        <button data-value="a">Áudio / narração</button>
+        <button data-value="p">Pessoa falando</button>
+      </div>
+    </div>
+    <div class="group grow">
+      <label class="label" for="q">Buscar</label>
+      <input id="q" type="search" placeholder="título, perfil ou hashtag" autocomplete="off">
+    </div>
+    <div class="group">
+      <label class="label" for="sort">Ordenar por</label>
+      <select id="sort">
+        <option value="views">Mais views</option>
+        <option value="likes">Mais curtidas</option>
+        <option value="date">Mais recentes</option>
+      </select>
+    </div>
+    <label class="toggle"><input type="checkbox" id="trends"> Mostrar trends (#manifesting em humor, dança, casal)</label>
+  </section>
+
+  <main class="wrap">
+    <p class="summary" id="summary" aria-live="polite"></p>
+    <div class="grid" id="grid"></div>
+    <div class="more-wrap"><button class="more" id="more">Mostrar mais</button></div>
+  </main>
+
+  <section class="wrap insights" aria-labelledby="insights-title">
+    <h2 id="insights-title">O que mais viraliza</h2>
+    <div class="cards">
+      <article><h3>O Instagram tem os maiores números</h3><p>Os Reels do topo chegam a 50, 49 e 41 milhões de views. No TikTok, o máximo no tema foi 19 milhões; no YouTube, 16 milhões.</p></article>
+      <article><h3>Manifestar alguém</h3><p>Relacionamento é o subtema mais forte no Instagram em 2026: um único perfil fez 4 Reels entre 12 e 21 milhões com histórias de &quot;manifestei a ligação dele&quot;.</p></article>
+      <article><h3>CTA de comentário</h3><p>&quot;Comment 369&quot;, &quot;Comment 555&quot;, &quot;Type YES to claim it&quot;, &quot;Claim it&quot;: pedir uma palavra nos comentários aparece em vários Reels de 9 a 22 milhões. É um formato natural para captar lead.</p></article>
+      <article><h3>Áudio de autor famoso sobre imagens</h3><p>Trechos de Brian Tracy, Bob Proctor e Joe Dispenza com b-roll, sem ninguém na tela. Um único perfil fez três vídeos entre 5 e 13 milhões em 2026.</p></article>
+      <article><h3>Afirmações em primeira pessoa</h3><p>&quot;I am...&quot;, lucky girl syndrome, afirmações diárias com texto na tela. Dominam o TikTok, de 3 a 19 milhões.</p></article>
+      <article><h3>Frequências e subliminais</h3><p>432, 888, 963 e 1111 Hz, &quot;just listen&quot;, &quot;do not overuse&quot;. Fortes no YouTube longo e nos Shorts.</p></article>
+      <article><h3>Fora dos EUA</h3><p>No espanhol, afirmações e decretos (Conny Méndez) lideram o YouTube. A Índia, em hinglish, domina o Instagram. No Brasil, os maiores estão no Instagram (20,5 e 9,4 milhões).</p></article>
+    </div>
+  </section>
+
+  <section class="wrap method" aria-labelledby="method-title">
+    <h2 id="method-title">Como ler estes dados</h2>
+    <ul>
+      <li><strong>Views</strong> são o total mundial de cada vídeo no dia da coleta. TikTok, YouTube e Instagram contam views de formas diferentes, então compare dentro da mesma plataforma.</li>
+      <li><strong>Formato</strong> é inferido pelo título e pelas hashtags (afirmação, subliminal, frequência, "listen", repost de áudio). Confira o vídeo antes de usar como referência.</li>
+      <li><strong>EUA</strong>: nenhuma plataforma publica views por país. No TikTok, EUA significa criador registrado nos EUA. No YouTube, áudio e título em inglês. No Instagram, legenda em inglês, sem contar o hinglish.</li>
+      <li><strong>Instagram</strong>: views das páginas de tópico do Instagram e dos Reels de 2026 dos 21 maiores perfis do nicho. A data vem do código do Reel. É uma amostra do topo, não um censo.</li>
+      <li><strong>TikTok</strong>: busca por mais curtidos em 15 termos em inglês e 10 em outros idiomas, mais hashtags. Períodos anteriores a 6 meses vêm da busca "desde sempre".</li>
+      <li><strong>YouTube</strong>: 47 buscas em 16 idiomas, ordenadas por views, fatiadas por período, com data exata de cada vídeo.</li>
+    </ul>
+    <p class="downloads">Baixar tudo: <a href="data/lei-da-atracao-2026.csv" download>CSV de 2026</a> · <a href="data/lei-da-atracao-4-anos.csv" download>CSV dos últimos 4 anos</a></p>
+  </section>
+
+  <footer class="wrap foot">
+    <p>Fontes: YouTube via yt-dlp; TikTok, Instagram e Shorts via ScrapeCreators. Coleta e ranking com a skill <code>videos-virais</code>.</p>
+  </footer>
+
+  <script src="../assets/app.js" defer></script>
+</body>
+</html>
